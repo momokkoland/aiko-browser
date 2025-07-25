@@ -1,0 +1,22 @@
+{
+  "name": "aiko-browser",
+  "version": "1.0.0",
+  "description": "aikoブラウザ",
+  "main": "main.js",
+  "author": "あなたの名前",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^26.0.12"
+  },
+  "files": [
+    "index.html",
+    "aiko.js",
+    "aiko.css",
+    "main.js",
+    "preload.js"
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>aikoブラウザ</title>
+  <link rel="stylesheet" href="aiko.css">
+</head>
+<body>
+  <h1>aikoブラウザ</h1>
+  <p>あなたの恋愛に寄り添うaikoの楽曲をお届けします♡</p>
+
+  <form id="searchForm">
+    <fieldset>
+      <legend>シチュエーション</legend>
+      <label><input type="checkbox" name="situation" value="失恋"> 失恋</label>
+      <label><input type="checkbox" name="situation" value="忘れられない恋"> 忘れられない恋</label>
+      <label><input type="checkbox" name="situation" value="初恋"> 初恋</label>
+      <label><input type="checkbox" name="situation" value="恋の始まり"> 恋の始まり</label>
+      <label><input type="checkbox" name="situation" value="幸せな恋愛中"> 幸せな恋愛中</label>
+      <label><input type="checkbox" name="situation" value="複雑な心境の恋愛">複雑な心境の恋愛 </label>
+      <label><input type="checkbox" name="situation" value="恋したい"> 恋したい</label>
+      <label><input type="checkbox" name="situation" value="一方的な想い"> 一方的な想い</label>
+      <label><input type="checkbox" name="situation" value="好きすぎる">好きすぎる </label>
+      <label><input type="checkbox" name="situation" value="付き合って長い恋人"> 付き合って長い恋人</label>
+      <label><input type="checkbox" name="situation" value="付き合い立て"> 付き合い立て</label>
+      <label><input type="checkbox" name="situation" value="クズとの恋愛"> クズとの恋愛</label>
+      <label><input type="checkbox" name="situation" value="願わない別れ"> 願わない別れ</label>
+      <label><input type="checkbox" name="situation" value="未練タラッタラ"> 未練タラッタラ</label>
+      <label><input type="checkbox" name="situation" value="浮かれ気分">浮かれ気分 </label>
+      <label><input type="checkbox" name="situation" value="片思い">片思い </label>
+      <label><input type="checkbox" name="situation" value="恋の余韻">恋の余韻 </label>
+
+      <!-- 必要なだけ追加してOK -->
+    </fieldset>
+
+    <fieldset>
+      <legend>季節・天気</legend>
+      <label><input type="checkbox" name="season" value="春"> 春</label>
+      <label><input type="checkbox" name="season" value="夏"> 夏</label>
+      <label><input type="checkbox" name="season" value="秋"> 秋</label>
+      <label><input type="checkbox" name="season" value="冬"> 冬</label>
+      <label><input type="checkbox" name="season" value="快晴"> 快晴</label>
+      <label><input type="checkbox" name="season" value="雨の日"> 雨の日</label>
+      <label><input type="checkbox" name="season" value="夜"> 夜</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>曲調</legend>
+      <label><input type="checkbox" name="taste" value="ポップ"> ポップ</label>
+      <label><input type="checkbox" name="taste" value="エモ"> エモ</label>
+      <label><input type="checkbox" name="taste" value="感動"> 感動</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>感情</legend>
+      <label><input type="checkbox" name="emotion" value="恋しい"> 恋しい</label>
+      <label><input type="checkbox" name="emotion" value="愛しい"> 愛しい</label>
+      <label><input type="checkbox" name="emotion" value="好き"> 好き</label>
+      <label><input type="checkbox" name="emotion" value="恋したい"> 恋したい</label>
+      <label><input type="checkbox" name="emotion" value="切ない"> 切ない</label>
+      <label><input type="checkbox" name="emotion" value="泣きたい"> 泣きたい</label>
+      <label><input type="checkbox" name="emotion" value="悲しい"> 悲しい</label>
+      <label><input type="checkbox" name="emotion" value="楽しい"> 楽しい</label>
+      <label><input type="checkbox" name="emotion" value="苦しい"> 苦しい</label>
+      <label><input type="checkbox" name="emotion" value="会いたい"> 会いたい</label>
+    </fieldset>
+
+    <button type="button" onclick="searchSongs()">探す！</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script src="aiko.js"></script>
+</body>
+</html>
